@@ -1,0 +1,55 @@
+.searchPage {
+  background-color: #fcf7ec;
+  width: 100vw;
+  height: 100vh;
+  .searchInput {
+    justify-content: flex-start;
+    width: 100%;
+    :global {
+      .MuiFormControl-root {
+        width: 70%;
+      }
+    }
+  }
+  .listTitle {
+    font-size: 1.5rem;
+    height: 2em;
+    color: rgba(0, 0, 0, 0.65);
+    width: 60%;
+    min-width: 6em;
+    margin: 4em auto 0;
+  }
+  .listBox {
+    margin: 0 auto;
+    padding-bottom: 10%;
+    width: 60%;
+    min-width: 6em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    .chartbox {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      & > .chartTitle {
+        font-size: 1.6rem;
+        width: 100%;
+        padding-left: 0.5em;
+      }
+      & > .growth {
+        color: gainsboro;
+        padding-left: 0.8em;
+      }
+      & > .chart {
+        width: 100%;
+        height: 60%;
+      }
+      & > .time {
+        color: gainsboro;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
