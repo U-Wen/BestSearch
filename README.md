@@ -39,27 +39,50 @@ $ npm run start
 ### 项目结构
 
 ```
-├── config                   # eject webpack 配置
-├── public
-│   └── favicon.png          # Favicon
+├── config                 		# eject webpack 配置
+├── md_img						# README 用到的图片
+├── public						# 静态资源文件
+├── scripts						# 执行脚本
 ├── src
-│   ├── industrial-envir-protect-ui   		# -连接的一般为子仓库【submodule】，子仓库目录结构和src一样
-│   ├── actions              # 从model中抽离出的action【不建议，提高复杂性，降低可维护性】
-│   ├── assets               # 本地静态资源
-│   ├── components           # 业务通用组件
-│   ├── e2e                  # 集成测试用例
-│   ├── layouts              # 通用布局
-│   ├── models               # 全局 dva model
-│   ├── pages                # 业务页面入口和常用模板
-│   ├── services             # 后台接口服务【建议在全局model中使用这一层，在页面model中直接yeild call】
-│   ├── utils                # 工具库
-│   ├── locales              # 国际化资源
-│   ├── app.js          	 # 入口文件
-│   ├── defaultSettings.js   # 默认设置
-│   ├── global.less          # 全局样式
-│   └── typing.d.ts          # 全局类型声明文件
-├── tests                    # 测试工具
+│   ├── api   					# 接口文件夹
+│   ├── app              		# 全局导出Redux和Hook
+│   ├── components          	# 业务通用组件，含Header和搜索框
+│   ├── models              	# Redux 数据流
+│   ├── pages               
+		└── _Home           	# 首页
+		└── Exception.tsx   	# 异常显示页面
+		└── index.ts   			# 统一导出页面
+		└── Search          	# 搜索页
+			└── index.tsx       # 页面文件
+			└── ChartBox.tsx    # 图表组件
+			└── MySkeleton.tsx  # 数据请求时预览骨架
+├── index.css					# 全局样式
+├── index.tsx					# 入口文件
 ├── README.md
 └── package.json
 ```
 
+### 页面预览
+
+**首页**
+
+![home](.\md_img\home.jpg)
+
+**搜索页**
+
+>- 支持搜索框搜索或直接输入路由地址
+>
+>- 空的搜索内容将会提示警告
+
+![search](./md_img/search.jpg)
+
+![blank_search](./md_img/blank_search.jpg)
+
+**异常页面**
+
+> 以下两种情况将会出现异常显示页面
+>
+> - 页面渲染出错
+> - 未定义的路由
+
+![exception](./md_img/exception.jpg)
