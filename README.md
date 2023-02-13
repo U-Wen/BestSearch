@@ -66,7 +66,7 @@ $ npm run start
 
 **首页**
 
-![home](https://github.com/U-Wen/BestSearch/blob/main/md_img/home.jpg)
+![home](https://raw.githubusercontent.com/U-Wen/BestSearch/main/md_img/home.jpg)
 
 **搜索页**
 
