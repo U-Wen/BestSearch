@@ -40,24 +40,24 @@ $ npm run start
 
 ```
 ├── config                 		# eject webpack 配置
-├── md_img						# README 用到的图片
-├── public						# 静态资源文件
-├── scripts						# 执行脚本
+├── md_img				# README 用到的图片
+├── public				# 静态资源文件
+├── scripts				# 执行脚本
 ├── src
-│   ├── api   					# 接口文件夹
+│   ├── api   				# 接口文件夹
 │   ├── app              		# 全局导出Redux和Hook
-│   ├── components          	# 业务通用组件，含Header和搜索框
-│   ├── models              	# Redux 数据流
+│   ├── components          		# 业务通用组件，含Header和搜索框
+│   ├── models              		# Redux 数据流
 │   ├── pages               
-		└── _Home           	# 首页
-		└── Exception.tsx   	# 异常显示页面
-		└── index.ts   			# 统一导出页面
-		└── Search          	# 搜索页
-			└── index.tsx       # 页面文件
-			└── ChartBox.tsx    # 图表组件
-			└── MySkeleton.tsx  # 数据请求时预览骨架
-├── index.css					# 全局样式
-├── index.tsx					# 入口文件
+	└── _Home           		# 首页
+	└── Exception.tsx   		# 异常显示页面
+	└── index.ts   			# 统一导出页面
+	└── Search          		# 搜索页
+		└── index.tsx       	# 页面文件
+		└── ChartBox.tsx    	# 图表组件
+		└── MySkeleton.tsx  	# 数据请求时预览骨架
+├── index.css				# 全局样式
+├── index.tsx				# 入口文件
 ├── README.md
 └── package.json
 ```
