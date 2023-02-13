@@ -1,6 +1,6 @@
 ### 写在前面
 
-**代码全部使用 React Hook + TypeScript，使用以下 React 生态包**
+**代码全部使用 React Hook + TypeScript，使用以下 React 生态包，所有依赖版本都是 `@latest`**
 
 - [React Router](https://reactrouter.com/en/6.8.1/start/overview)
 - [React Redux](https://react-redux.js.org/)
@@ -20,21 +20,41 @@
   开发时使用到的运行环境，如果无法正常运行，可以尝试将环境更新到一致
 
 - node v16
-- npm v8
+- npm v8 或 yarn v1.2.7
 
-### 安装依赖
+### 本地运行项目
 
-注意：请不要带`$`符号，之后所有`shell`命令都不需要
+> 注意：请不要带`$`符号，之后所有`shell`命令都不需要
+
+**拉取代码**
 
 ``` shell
+$ git clone https://github.com/U-Wen/BestSearch.git
+```
+
+注：如果拉取失败，请尝试切换代理
+
+**安装依赖**
+
+``` shell
+# if use npm
 $ npm install
+
+# if use yarn
+$ yarn
 ```
 
 ### 运行开发环境
 
 ``` shell
+# if use npm
 $ npm run start
+
+# if use yarn
+$ yarn start
 ```
+
+注：首次启动较慢，请耐心等待
 
 ### 项目结构
 
@@ -64,13 +84,31 @@ $ npm run start
 
 ### 页面预览
 
+> 如果在线图片显示异常，是DNS污染导致，可以尝试以下方式
+>
+> 1. 直接移步 `/md_img/` 目录查看图片
+>
+> 2. 如果有查看 Markdown 的软件（如：Typora），拉取代码后本地打开
+>
+> 3. 开启代理
+>
+> 4. 修改系统 `hosts` 文件
+>
+>    ``` ini
+>    # windows 目录：C:\Windows\System32\drivers\etc
+>    # mac/linux 目录：/etc/hosts
+>    # 在末尾新增以下内容，保存后刷新页面
+>    199.232.68.133 raw.githubusercontent.com
+>    199.232.68.133 githubusercontent.com
+>    ```
+
 **首页**
 
 ![home](./md_img/home.jpg)
 
 **搜索页**
 
->- 支持搜索框搜索或直接输入路由地址
+>- 支持搜索框搜索或直接输入路由地址搜索
 >
 >- 空的搜索内容将会提示警告
 
